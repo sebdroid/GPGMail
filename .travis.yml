@@ -1,0 +1,12 @@
+os: osx
+osx_image: xcode11
+addons:
+  homebrew:
+    packages: gnupg
+script:
+  - cd Dependencies
+  - git clone --recursive https://github.com/GPGTools/Libmacgpg.git
+  - make
+  - cd ..
+  - ls -d */*
+  - make
