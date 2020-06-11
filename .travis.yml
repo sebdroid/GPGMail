@@ -6,7 +6,10 @@ addons:
 script:
   - cd Dependencies
   - git clone --recursive https://github.com/GPGTools/Libmacgpg.git
+  - cd Libmacgpg
   - make
+  - ls build/Release
+  - cp build/Release/Libmacgpg.framework ~/Library/Frameworks/Libmacgpg.framework
   - cd ..
-  - ls -d */*
+  - cd ..
   - make
