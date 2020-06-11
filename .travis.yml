@@ -7,5 +7,5 @@ script:
   - cd Dependencies
   - git clone https://github.com/GPGTools/Libmacgpg.git
   - cd ..
-  - ls
+  - ls -d */*
   - make
